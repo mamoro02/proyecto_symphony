@@ -5,8 +5,6 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Entity\Product;
-use App\Form\ProductType;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\Cliente;
 use App\Entity\Emp;
@@ -55,8 +53,6 @@ class ClienteController extends AbstractController
             "totalPages" => $totalPages
         ]);
     }
-
-
 
 
     #[Route('/detail/{id}', name: 'client_show')]
